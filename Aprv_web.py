@@ -19,7 +19,8 @@ import getpass
 
 master_file_path = '決裁承認.db'
 menber_file_path = 'menber.db'
-desktop_path = os.getenv("HOMEDRIVE") + os.getenv("HOMEPATH") + "\\Desktop"
+#desktop_path = os.getenv("HOMEDRIVE") + os.getenv("HOMEPATH") + "\\Desktop"
+desktop_path = ''
 
 lst_Section = ['全部署']
 #◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
