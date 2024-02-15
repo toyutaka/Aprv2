@@ -19,7 +19,7 @@ import getpass
 
 master_file_path = '決裁承認.db'
 menber_file_path = 'menber.db'
-#desktop_path = os.getenv("HOMEDRIVE") + os.getenv("HOMEPATH") + "\\Desktop"
+#01 desktop_path = os.getenv("HOMEDRIVE") + os.getenv("HOMEPATH") + "\\Desktop"
 desktop_path = ''
 
 lst_Section = ['全部署']
@@ -286,8 +286,8 @@ with st.sidebar:
         #Cnt = len(lst_Section) - 1 
         #box_Section = st.selectbox('部署',lst_Section,index = lst_Section.index(df_Menber.loc[User,'UseInfo_01']))
         print(df_Menber.loc[User,'UseInfo_01'].split(","))
-        box_Section = st.multiselect('部署',lst_Section,default=df_Menber.loc[User,'UseInfo_01'].split(","))
-        #box_Section = st.multiselect('部署',lst_Section,default=['全部署', '企画1課'])
+        #01 box_Section = st.multiselect('部署',lst_Section,default=df_Menber.loc[User,'UseInfo_01'].split(","))
+        box_Section = st.multiselect('部署',lst_Section,default=['全部署'])
         dt = datetime.date.today()
         dt = dt - datetime.timedelta(days=10)
         dt_st = dt.replace(day=1)
