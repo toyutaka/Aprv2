@@ -285,7 +285,7 @@ with st.sidebar:
         st.subheader('ファイル出力')
         #Cnt = len(lst_Section) - 1 
         #box_Section = st.selectbox('部署',lst_Section,index = lst_Section.index(df_Menber.loc[User,'UseInfo_01']))
-        print(df_Menber.loc[User,'UseInfo_01'].split(","))
+        #print(df_Menber.loc[User,'UseInfo_01'].split(","))
         #01 box_Section = st.multiselect('部署',lst_Section,default=df_Menber.loc[User,'UseInfo_01'].split(","))
         box_Section = st.multiselect('部署',lst_Section,default=['全部署'])
         dt = datetime.date.today()
